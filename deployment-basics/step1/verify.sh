@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ls abc
+kubectl get deployment my-first-deployment

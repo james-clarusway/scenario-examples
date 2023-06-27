@@ -3,12 +3,15 @@
   "description": "How to scale deployments",
   "details": {
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "foreground": "foreground.sh",
+      "background": "background.sh"      
     },
     "steps": [
       {
         "title": "scale deployment",
-        "text": "step1.md"
+        "text": "step1.md",
+        "verify": "verify.sh"
       }
     ],
     "finish": {
