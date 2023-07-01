@@ -1,0 +1,24 @@
+{
+  "title": "Scale Deployment",
+  "description": "How to scale deployments",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "foreground": "foreground.sh",
+      "background": "background.sh"      
+    },
+    "steps": [
+      {
+        "title": "scale deployment",
+        "text": "step1.md",
+        "verify": "verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}
