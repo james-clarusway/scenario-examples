@@ -1,0 +1,29 @@
+{
+  "title": "BASICS",
+  "description": "Basic-consepts",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "create-pod",
+        "text": "step1/step1.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "scale-pod",
+        "foreground": "step2/foreground.sh",
+        "background": "step2/background.sh",  
+        "text": "step2/step2.md",
+        "verify": "step2/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}

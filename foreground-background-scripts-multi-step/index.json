@@ -11,7 +11,7 @@
     "steps": [
       {
         "title": "Step1",
-        "text": "step1/text.md",
+        "text": "step1/intro.md",
         "foreground": "step1/foreground.sh",
         "background": "step1/background.sh",
         "verify": "step1/verify.sh"
