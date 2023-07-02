@@ -1,8 +1,6 @@
 #!/bin/bash
 
-k get deploy clarusweb -o yaml | grep 'image: clarusway/clarusweb:2.0'
-
-if [[ $? -eq 0 ]]
+if [[ $(kubectl get deploy clarusweb -o yaml | grep 'image: clarusway/clarusweb:2.0' | awk '{print $3}') = 'clarusway/clarusweb:2.0' ]]
 then
   exit 0
 else
