@@ -1,1 +1,1 @@
-There is a deployment. Increase the replica of deployment to 3.
+There is a deployment named `nginx-deploy`. Increase the replica of deployment to 3.
