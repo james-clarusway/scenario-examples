@@ -1,8 +1,6 @@
 #!/bin/bash
 
-number=$(kubectl get deploy nginx-deploy | tail -n 1 | awk '{print $4}')
-
-if [[ $number -eq 3 ]]
+if [[ $(kubectl get ns | grep 'webserver' | awk '{print $1}') = 'webserver' ]]
 then
   exit 0
 else
