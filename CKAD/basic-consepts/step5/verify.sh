@@ -1,6 +1,6 @@
 #!/bin/bash
 
-k get deploy -o yaml | grep 'image: clarusway/clarusweb:2.0'
+k get deploy clarusweb -o yaml | grep 'image: clarusway/clarusweb:2.0'
 
 if [[ $? -eq 0 ]]
 then
