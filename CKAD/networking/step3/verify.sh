@@ -1,8 +1,6 @@
 #!/bin/bash
 
-if [[ $(kubectl get deploy -n webserver | grep 'mydeploy' | head -1 | awk '{print $1}') = 'mydeploy' \
-&& $(kubectl get deploy mydeploy -n webserver -o yaml | grep 'httpd:alpine' | head -1 | awk '{print $3}') = 'httpd:alpine' \
-&& $(kubectl get deploy mydeploy -n webserver -o yaml | grep 'web: apache' | head -1 | awk '{print $1,$2}') ]]
+if [[ $(kubectl get ep clarus-svc  | grep clarus-svc | awk '{print $2}') != '<none>' ]]
 then
   exit 0
 else

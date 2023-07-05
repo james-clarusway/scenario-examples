@@ -7,17 +7,19 @@
     },
     "steps": [
       {
-        "title": "create-pod",
+        "title": "expose-pod",
         "text": "step1/step1.md",
         "verify": "step1/verify.sh"
       },
       {
-        "title": "create-namespace",
+        "title": "nodeport-service",
         "text": "step2/step1.md",
         "verify": "step2/verify.sh"
       },
       {
-        "title": "create-deploy",
+        "title": "correct-service",
+        "foreground": "step3/foreground.sh",
+        "background": "step3/background.sh",  
         "text": "step3/step1.md",
         "verify": "step3/verify.sh"
       },
