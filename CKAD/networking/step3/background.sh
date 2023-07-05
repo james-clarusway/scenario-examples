@@ -17,7 +17,7 @@ spec:
     protocol: TCP
     targetPort: 80
   selector:
-    app: clarus-deployX
+    app: clarus-svc
   type: NodePort
 EOF
 
