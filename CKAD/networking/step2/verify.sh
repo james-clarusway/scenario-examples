@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ $(kubectl get ns | grep 'webserver' | awk '{print $1}') = 'webserver' ]]
+if [[ $(kubectl get svc mynginx | grep 'mynginx' | awk -F: '{print $2}' | awk -F/ '{print $1}') = '30001' ]]
 then
   exit 0
 else
