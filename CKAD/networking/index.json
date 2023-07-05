@@ -1,6 +1,6 @@
 {
-  "title": "BASICS",
-  "description": "Basic-consepts",
+  "title": "Networking",
+  "description": "Kubernetes Networking",
   "details": {
     "intro": {
       "text": "intro.md"
