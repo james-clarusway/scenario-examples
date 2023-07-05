@@ -1,0 +1,46 @@
+{
+  "title": "BASICS",
+  "description": "Basic-consepts",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "create-pod",
+        "text": "step1/step1.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "create-namespace",
+        "text": "step2/step1.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "create-deploy",
+        "text": "step3/step1.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "scale-deploy",
+        "foreground": "step4/foreground.sh",
+        "background": "step4/background.sh",  
+        "text": "step4/step1.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "update-deployment",
+        "foreground": "step5/foreground.sh",
+        "background": "step5/background.sh",  
+        "text": "step5/step1.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}
