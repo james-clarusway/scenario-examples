@@ -1,1 +1,2 @@
-There is a deployment named `clarusweb`. Update the image of `clarusweb` deployment to `clarusway/clarusweb:2.0` image.
+- Create a deployment of 3 replicas, expose it via a ClusterIP service on port 80 and name it as 'nginx-deploy'. Label the pods of nginx-deploy with 'tier: frontend'. 
+- Create a NetworkPolicy named nginx-netpol so that only pods with labels 'role: frontend' can access the deployment and apply it.

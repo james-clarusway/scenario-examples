@@ -1,1 +1,2 @@
-Create a deployment of 3 replicas, expose it via a ClusterIP service on port 80 and name it as 'nginx-deploy'. Label the pods of nginx-deploy with 'tier: frontend'. Create a NetworkPolicy named nginx-netpol so that only pods with labels 'app: web' can access the deployment and apply it.
+- There are nginx-pod, apache-pod pods and services in blue namespace. 
+- Create an ingress object name it as 'test-ingress'. Publish nginx-pod from '/nginx' path and apache-pod from '/apache' path. And define host as 'ckad.clarusway.us'.  
