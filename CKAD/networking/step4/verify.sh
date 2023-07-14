@@ -1,8 +1,9 @@
 #!/bin/bash
 
-number=$(kubectl get deploy nginx-deploy | tail -n 1 | awk '{print $4}')
+if [[ $(kubectl get deployment nginx-deploy -o=jsonpath='{.spec.replicas}') -eq 3 && \
+$(kubectl get deployment nginx-deploy -o=jsonpath='{.spec.template.spec.containers[0].ports[0].containerPort}') -eq 80 ]]
 
-if [[ $(k get deployment nginx-deploy -o yaml | grep "replicas: 3" | head -1) -eq 3 ]]
+ ]]
 then
   exit 0
 else
