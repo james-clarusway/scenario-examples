@@ -6,25 +6,27 @@
       "text": "intro.md"
     },
     "steps": [
-      // {
-      //   "title": "expose-pod",
-      //   "text": "step1/step1.md",
-      //   "verify": "step1/verify.sh"
-      // },
-      // {
-      //   "title": "nodeport-service",
-      //   "text": "step2/step1.md",
-      //   "verify": "step2/verify.sh"
-      // },
-      // {
-      //   "title": "correct-service",
-      //   "foreground": "step3/foreground.sh",
-      //   "background": "step3/background.sh",  
-      //   "text": "step3/step1.md",
-      //   "verify": "step3/verify.sh"
-      // },
+      {
+        "title": "expose-pod",
+        "text": "step1/step1.md",
+        //"verify": "step1/verify.sh"
+      },
+      {
+        "title": "nodeport-service",
+        "text": "step2/step1.md",
+        //"verify": "step2/verify.sh"
+      },
+      {
+        "title": "correct-service",
+        "foreground": "step3/foreground.sh",
+        "background": "step3/background.sh",  
+        "text": "step3/step1.md",
+        //"verify": "step3/verify.sh"
+      },
       {
         "title": "network-policy",
+        "foreground": "step4/foreground.sh",
+        "background": "step4/background.sh",  
         "text": "step4/step1.md",
         "verify": "step4/verify.sh"
       },
