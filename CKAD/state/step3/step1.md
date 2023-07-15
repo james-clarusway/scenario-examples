@@ -1,0 +1,1 @@
+There is a deployment called `clarus-deploy` using image `clarusway/clarusweb` and 3 replicas. There is a service object for this deployment named `clarus-svc`. But `clarus-svc` service couldn't catch the pods of `clarus-deploy` deployment. Solve the problem.

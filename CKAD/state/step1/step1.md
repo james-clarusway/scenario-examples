@@ -1,0 +1,2 @@
+- Create a PersistentVolume of 5Gi, called 'mypv'. 
+- Make it have accessMode of 'ReadWriteOnce', storageClassName 'manual', mounted on hostPath '/mnt/data'.

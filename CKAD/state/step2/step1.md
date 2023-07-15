@@ -1,0 +1,1 @@
+Convert the ClusterIP to NodePort for the `mynginx` service and define the port `30001` as NodePort.

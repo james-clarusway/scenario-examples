@@ -1,0 +1,2 @@
+- There are nginx-pod, apache-pod pods and services in blue namespace. 
+- Create an ingress object name it as 'test-ingress'. Publish nginx-pod from '/nginx' path and apache-pod from '/apache' path. And define host as 'ckad.clarusway.us'.  

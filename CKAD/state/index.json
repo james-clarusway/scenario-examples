@@ -1,0 +1,46 @@
+{
+  "title": "State",
+  "description": "Kubernetes Volumes",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "create-pv",
+        "text": "step1/step1.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "nodeport-service",
+        "text": "step2/step1.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "correct-service",
+        "foreground": "step3/foreground.sh",
+        "background": "step3/background.sh",  
+        "text": "step3/step1.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "ingress-object",
+        "foreground": "step4/foreground.sh",
+        "background": "step4/background.sh",  
+        "text": "step4/step1.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "network-policy",
+        "text": "step5/step1.md",
+        "verify": "step5/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}
