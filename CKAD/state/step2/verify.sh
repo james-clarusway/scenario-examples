@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ $(kubectl get svc mynginx | grep 'mynginx' | awk -F: '{print $2}' | awk -F/ '{print $1}') = '30001' ]]
+if [[ $(kubectl get pvc mypv-claim | awk '{print $3}' | tail -1) = 'mypv' ]]
 then
   exit 0
 else

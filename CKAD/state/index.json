@@ -12,7 +12,9 @@
         "verify": "step1/verify.sh"
       },
       {
-        "title": "nodeport-service",
+        "title": "correct-pvc",
+        "foreground": "step2/foreground.sh",
+        "background": "step2/background.sh",
         "text": "step2/step1.md",
         "verify": "step2/verify.sh"
       },

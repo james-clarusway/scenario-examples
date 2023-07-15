@@ -1,1 +1,1 @@
-Convert the ClusterIP to NodePort for the `mynginx` service and define the port `30001` as NodePort.
+There is a pvc named 'mypv-claim' that must be connected to 'mypv' persistentvolume. Correct the 'mypv-claim' pvc.
