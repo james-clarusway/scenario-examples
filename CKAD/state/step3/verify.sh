@@ -1,6 +1,7 @@
 #!/bin/bash
 
-if [[ $(kubectl get ep clarus-svc  | grep clarus-svc | awk '{print $2}') != '<none>' ]]
+if [[ $(kubectl get po ng-pod -o yaml | grep 'claimName: mypv-claim' | awk '{print $2}') != 'mypv-claim' \
+&& $(kubectl get po ng-pod -o jsonpath='{.spec.containers[0].volumeMounts[0].mountPath}') != '/mnt/myvol' ]]
 then
   exit 0
 else
