@@ -1,0 +1,1 @@
+There is a deployment named `clarusweb`. Update the image of `clarusweb` deployment to `clarusway/clarusweb:2.0` image.
