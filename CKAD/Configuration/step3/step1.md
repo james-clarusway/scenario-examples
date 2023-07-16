@@ -1,1 +1,2 @@
-Create an nginxpod named 'ng-pod', mount the PersistentVolumeClaim mypv-claim to '/mnt/myvol' folder.
+- Create a secret named 'mysecret' with values 'password=secret123'.
+- Create a new pod named "mysql-pod" with "mysql:latest" image that loads the value from variable 'passwd' of 'mysecret' secret in an env variable called 'MYSQL_ROOT_PASSWORD'.

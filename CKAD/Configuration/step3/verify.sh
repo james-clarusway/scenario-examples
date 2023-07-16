@@ -1,7 +1,7 @@
 #!/bin/bash
 
-if [[ $(kubectl get po ng-pod -o yaml | grep 'claimName: mypv-claim' | awk '{print $2}') == 'mypv-claim' \
-&& $(kubectl get po ng-pod -o jsonpath='{.spec.containers[0].volumeMounts[0].mountPath}') == '/mnt/myvol' ]]
+if [[ $(kubectl get secret mysecret -o jsonpath='{.data.password}') == 'c2VjcmV0MTIz' \
+&& $(kubectl exec -it mysql-pod -- printenv MYSQL_ROOT_PASSWORD) == 'secret123' ]]
 then
   exit 0
 else
