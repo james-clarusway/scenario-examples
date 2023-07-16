@@ -1,1 +1,1 @@
-Create a new pod named "clarusweb-pod" that loads the value from variable 'mycolor' of 'myconfig' configmap in an env variable called 'COLOR'.
+Create a new pod named "clarusweb-pod" with "clarusway/clarusweb:env" image that loads the value from variable 'mycolor' of 'myconfig' configmap in an env variable called 'COLOR'.
