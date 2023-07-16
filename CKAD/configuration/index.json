@@ -20,6 +20,13 @@
         "title": "attach-pvc-to-pod", 
         "text": "step3/step1.md",
         "verify": "step3/verify.sh"
+      },
+      {
+        "title": "scale-deploy",
+        "foreground": "step4/foreground.sh",
+        "background": "step4/background.sh",  
+        "text": "step4/step1.md",
+        "verify": "step4/verify.sh"
       }
     ],
     "finish": {
