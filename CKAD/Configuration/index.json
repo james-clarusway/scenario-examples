@@ -1,5 +1,5 @@
 {
-  "title": "State",
+  "title": "Configuration",
   "description": "Kubernetes Configuration",
   "details": {
     "intro": {
@@ -13,8 +13,6 @@
       },
       {
         "title": "correct-pvc",
-        "foreground": "step2/foreground.sh",
-        "background": "step2/background.sh",
         "text": "step2/step1.md",
         "verify": "step2/verify.sh"
       },

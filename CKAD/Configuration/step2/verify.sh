@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ $(kubectl get pvc mypv-claim | awk '{print $3}' | tail -1) = 'mypv' ]]
+if [[ $(kubectl exec -it clarusweb-pod -- printenv COLOR) = 'blue' ]]
 then
   exit 0
 else

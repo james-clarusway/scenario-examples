@@ -1,2 +1,1 @@
-There is a pvc named 'mypv-claim' that must be connected to 'mypv' persistentvolume. Correct the 'mypv-claim' pvc.
-- Note: Create the pvc if it is required.
+Create a new pod named "clarusweb-pod" that loads the value from variable 'mycolor' of 'myconfig' configmap in an env variable called 'COLOR'.
