@@ -1,0 +1,1 @@
+- Create a configmap named 'myconfig' with values mycolor=blue

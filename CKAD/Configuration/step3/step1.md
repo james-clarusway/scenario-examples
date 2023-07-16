@@ -1,0 +1,1 @@
+Create an nginxpod named 'ng-pod', mount the PersistentVolumeClaim mypv-claim to '/mnt/myvol' folder.
