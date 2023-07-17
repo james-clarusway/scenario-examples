@@ -12,16 +12,9 @@
         "verify": "step1/verify.sh"
       },
       {
-        "title": "correct-pvc",
-        "foreground": "step2/foreground.sh",
-        "background": "step2/background.sh",
+        "title": "create-init-containers",
         "text": "step2/step1.md",
         "verify": "step2/verify.sh"
-      },
-      {
-        "title": "attach-pvc-to-pod", 
-        "text": "step3/step1.md",
-        "verify": "step3/verify.sh"
       }
     ],
     "assets": {
