@@ -1,0 +1,39 @@
+{
+  "title": "State",
+  "description": "Kubernetes Multi Container Pods",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "create-multi-container-pods",
+        "text": "step1/step1.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "correct-pvc",
+        "foreground": "step2/foreground.sh",
+        "background": "step2/background.sh",
+        "text": "step2/step1.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "attach-pvc-to-pod", 
+        "text": "step3/step1.md",
+        "verify": "step3/verify.sh"
+      }
+    ],
+    "assets": {
+      "host01": [
+        {"file": "multi-container-pod.yaml", "target": "/root", "chmod": "+w"}
+      ]
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}

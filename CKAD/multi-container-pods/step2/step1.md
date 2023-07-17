@@ -1,0 +1,4 @@
+- Create a Pod named 'multi-pod' with two containers with images 'httpd:alpine' and 'alpine:latest'.
+- Make a volume of type emptyDir and mount it in both containers.
+- For the httpd container, mount it on "/usr/local/apache2/htdocs" and for the alpine container, mount it on "/pod-data".
+- At the alpine container, create an index.html file under '/pod-data' folder with 'hello world' content and make sure container is running.
