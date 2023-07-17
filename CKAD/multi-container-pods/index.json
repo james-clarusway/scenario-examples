@@ -19,7 +19,7 @@
     ],
     "assets": {
       "host01": [
-        {"file": "multi-container-pod.yaml", "target": "/root", "chmod": "+w"},
+        // {"file": "multi-container-pod.yaml", "target": "/root", "chmod": "+w"},
         {"file": "cern.html", "target": "/mnt", "chmod": "+w"}
       ]
     },
