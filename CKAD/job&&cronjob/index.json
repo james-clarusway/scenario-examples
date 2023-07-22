@@ -12,9 +12,7 @@
         "verify": "step1/verify.sh"
       },
       {
-        "title": "correct-pvc",
-        "foreground": "step2/foreground.sh",
-        "background": "step2/background.sh",
+        "title": "create-job-hello",
         "text": "step2/step1.md",
         "verify": "step2/verify.sh"
       },

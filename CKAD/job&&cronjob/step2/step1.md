@@ -1,2 +1,3 @@
-There is a pvc named 'mypv-claim' that must be connected to 'mypv' persistentvolume. Correct the 'mypv-claim' pvc.
-- Note: Create the pvc if it is required.
+- Create a job named 'hello-job' with image 'busybox' that runs the command with arguments "/bin/sh -c echo hello;sleep 10;echo world".
+- Make it run 6 times, two after the other two.
+- Wait for job succeded.
