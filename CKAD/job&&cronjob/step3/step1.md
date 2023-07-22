@@ -1,1 +1,1 @@
-Create an nginxpod named 'ng-pod', mount the PersistentVolumeClaim mypv-claim to '/mnt/myvol' folder.
+- Create a cronjob named 'hello-cronjob' with image 'busybox' that runs every minute and the command with arguments "date; echo Hello World".

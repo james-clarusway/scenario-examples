@@ -1,7 +1,7 @@
 #!/bin/bash
 
-if [[ $(kubectl get po ng-pod -o yaml | grep 'claimName: mypv-claim' | awk '{print $2}') == 'mypv-claim' \
-&& $(kubectl get po ng-pod -o jsonpath='{.spec.containers[0].volumeMounts[0].mountPath}') == '/mnt/myvol' ]]
+if [[ $(kubectl get cj hello-cronjob -o jsonpath='{.spec.schedule}') == '* * * * *' \
+&& $(kubectl get cj hello-cronjob -o jsonpath='{.spec.jobTemplate.spec.template.spec.containers[0].image}') == 'busybox' ]]
 then
   exit 0
 else
