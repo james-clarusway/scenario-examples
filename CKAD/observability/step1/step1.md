@@ -1,0 +1,2 @@
+- Create an nginx pod named 'liveness-pod' with a liveness probe that just runs the command 'ls'.
+- The liveness probe starts kicking in after 5 seconds whereas the interval between probes would be 5 seconds.
