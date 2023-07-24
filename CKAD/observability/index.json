@@ -15,11 +15,6 @@
         "title": "create-readinessprobe",
         "text": "step2/step1.md",
         "verify": "step2/verify.sh"
-      },
-      {
-        "title": "attach-pvc-to-pod", 
-        "text": "step3/step1.md",
-        "verify": "step3/verify.sh"
       }
     ],
     "finish": {
