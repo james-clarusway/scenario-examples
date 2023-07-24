@@ -7,14 +7,12 @@
     },
     "steps": [
       {
-        "title": "create-pv",
+        "title": "create-livenessprobe",
         "text": "step1/step1.md",
         "verify": "step1/verify.sh"
       },
       {
-        "title": "correct-pvc",
-        "foreground": "step2/foreground.sh",
-        "background": "step2/background.sh",
+        "title": "create-readinessprobe",
         "text": "step2/step1.md",
         "verify": "step2/verify.sh"
       },
