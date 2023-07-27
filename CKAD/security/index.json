@@ -14,7 +14,7 @@
         "verify": "step1/verify.sh"
       },
       {
-        "title": "use-cm-pod",
+        "title": "add-securitycontext",
         "text": "step2/step1.md",
         "verify": "step2/verify.sh"
       },

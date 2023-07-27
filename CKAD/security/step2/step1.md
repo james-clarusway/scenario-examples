@@ -1,1 +1,2 @@
-Create a new pod named "clarusweb-pod" with "clarusway/clarusweb:env" image that loads the value from variable 'mycolor' of 'myconfig' configmap in an env variable called 'COLOR'.
+- Add securitycontext to 'web' deployment pod  in the 'prod' namespace.
+- Define user as 1000 and grop as 2000.
