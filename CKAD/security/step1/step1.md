@@ -1,0 +1,1 @@
+- Update the 'web' deployment in the 'prod' namespace to run as the 'limited' service account. The service account has already been created.
