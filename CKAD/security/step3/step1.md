@@ -1,2 +1,1 @@
-- Create a secret named 'mysecret' with values 'password=secret123'.
-- Create a new pod named "mysql-pod" with "mysql:latest" image that loads the value from variable 'passwd' of 'mysecret' secret in an env variable called 'MYSQL_ROOT_PASSWORD'.
+Update pod ubuntu-sleeper to run as Root user and with the SYS_TIME capability.

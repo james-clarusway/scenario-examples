@@ -19,7 +19,9 @@
         "verify": "step2/verify.sh"
       },
       {
-        "title": "attach-pvc-to-pod", 
+        "title": "add-capability",
+        "foreground": "step3/foreground.sh",
+        "background": "step3/background.sh", 
         "text": "step3/step1.md",
         "verify": "step3/verify.sh"
       },
