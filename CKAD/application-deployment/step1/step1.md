@@ -1,0 +1,1 @@
+- There is a deployment named `myapp`. Update the image of `myapp` deployment to `clarusway/clarusweb:2.0` image with a maxSurge of 10% and a maxUnavailable of 5%.
