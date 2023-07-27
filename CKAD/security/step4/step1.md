@@ -1,2 +1,0 @@
-- There is a configmap named `hello-cm`. 
-- Create a pod named 'hello-pod' with nginx image. Place the hello-cm configmap as volume to the '/usr/share/nginx/html' folder.
