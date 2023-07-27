@@ -1,7 +1,6 @@
 #!/bin/bash
 
-if [[ $(kubectl get secret mysecret -o jsonpath='{.data.password}') == 'c2VjcmV0MTIz' \
-&& $(kubectl exec -it mysql-pod -- printenv MYSQL_ROOT_PASSWORD) == 'secret123' ]]
+if [[ $(kubectl get po demo-context -o jsonpath='{.spec.containers[0].securityContext.capabilities.add}') == '["SYS_TIME"]' ]]
 then
   exit 0
 else

@@ -1,1 +1,1 @@
-Update pod ubuntu-sleeper to run as Root user and with the SYS_TIME capability.
+- Add the SYS_TIME capability to the pod 'demo-context'.
