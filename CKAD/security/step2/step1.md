@@ -1,2 +1,1 @@
-- Add securitycontext to 'web' deployment pod  in the 'prod' namespace.
-- Define user as 1000 and grop as 2000.
+- Update the 'web' deployment in the 'prod' namespace to run as the 'app-sa' service account.

@@ -1,7 +1,6 @@
 #!/bin/bash
 
-if [[ $(kubectl -n prod get deployment web -o jsonpath='{.spec.template.spec.securityContext.runAsUser}') -eq 1000 \
-&& $(kubectl -n prod get deployment web -o jsonpath='{.spec.template.spec.securityContext.runAsGroup}') -eq 2000 ]]
+if [[ $(kubectl -n prod get deployment web -o jsonpath='{.spec.template.spec.serviceAccount}') = 'app-sa' ]]
 then
   exit 0
 else
